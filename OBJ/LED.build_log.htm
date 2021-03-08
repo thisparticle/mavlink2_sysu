@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shige Windows, HP Inc., LIC=50D12-9RQTN-JNSA8-3M9NY-VCYLR-HSJXA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  D:\rj\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+D:\code\mavlink2\USER\Mavlink.uvprojx
+Project File Date:  11/11/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\rj\MDK\ARM\ARMCC\Bin'
+Build target 'Mavlink'
+compiling main.c...
+..\mavlink\mavlink_types.h(17): warning:  #47-D: incompatible redefinition of macro "MAVPACKED" (declared at line 10 of "..\mavlink\mavlink_avoid_errors.h")
+    #define MAVPACKED( __Declaration__ ) __Declaration__ __attribute__((packed))
+..\mavlink\mavlink_helpers.h(196): warning:  #870-D: invalid multibyte character sequence
+  		printf("Signature ï¼? no ! \n");
+..\mavlink\mavlink_helpers.h(201): warning:  #870-D: invalid multibyte character sequence
+  		printf("Signature ï¼? yes ! \n");
+..\mavlink\mavlink_helpers.h(257): warning:  #870-D: invalid multibyte character sequence
+  			printf("Timestamp ï¼? no ! \n");
+..\mavlink\mavlink_helpers.h(260): warning:  #870-D: invalid multibyte character sequence
+  			printf("Timestamp ï¼? yes ! \n");
+..\mavlink\mavlink_aes.h(117): warning:  #1295-D: Deprecated declaration aes_test - give arg types
+  int aes_test();
+..\mavlink\mavlink_aes.h(118): warning:  #1295-D: Deprecated declaration aes_ecb_test - give arg types
+  int aes_ecb_test();
+..\mavlink\mavlink_aes.h(119): warning:  #1295-D: Deprecated declaration aes_cbc_test - give arg types
+  int aes_cbc_test();
+..\mavlink\mavlink_aes.h(120): warning:  #1295-D: Deprecated declaration aes_ctr_test - give arg types
+  int aes_ctr_test();
+..\mavlink\mavlink_aes.h(121): warning:  #1295-D: Deprecated declaration aes_ccm_test - give arg types
+  int aes_ccm_test();
+..\mavlink\mavlink_aes.h(123): warning:  #1-D: last line of file ends without a newline
+  #endif   // AES_H
+..\mavlink\sysu_mavlink.h(73): warning:  #550-D: variable "temp" was set but never used
+  	uint8_t temp;
+..\mavlink\sysu_mavlink.h(76): warning:  #177-D: variable "len" was declared but never referenced
+  	uint16_t len;
+..\mavlink\sysu_mavlink.h(77): warning:  #177-D: variable "buf" was declared but never referenced
+  	uint8_t buf[128];
+..\mavlink\sysu_mavlink.h(160): warning:  #177-D: variable "tbuf" was declared but never referenced
+  		u8 tbuf[40];
+main.c(67): warning:  #177-D: variable "tbuf" was declared but never referenced
+  		u8 tbuf[40];
+main.c(68): warning:  #177-D: variable "t" was declared but never referenced
+  		u8 t=0;
+main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=38652 RO-data=4096 RW-data=416 ZI-data=4056  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\code\mavlink2\USER\RTE
+  D:\rj\MDK\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
