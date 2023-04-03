@@ -20,18 +20,18 @@
 
 通过固定接收方签名密钥，改变发送方生成消息的签名密钥来验证签名认证的有效性。
 
-<img src="README.assets/image-20230403130640851.png" alt="image-20230403130640851" style="zoom: 67%;" />
+<img src="README.assets/image-20230403130640851.png" alt="image-20230403130640851" style="zoom: 50%;" />
 
 合法密钥生成的签名可以通过签名认证，单片机能够正常解析消息。
 
-<img src="README.assets/image-20230403130711922.png" alt="image-20230403130711922" style="zoom:67%;" />
+<img src="README.assets/image-20230403130711922.png" alt="image-20230403130711922" style="zoom: 60%;" />
 
 不合法密钥生成的签名不能通过签名认证，单片机不解析消息，避免浪费计算资源。
 
-<img src="README.assets/image-20230403130742595.png" alt="image-20230403130742595" style="zoom:67%;" />
+<img src="README.assets/image-20230403130742595.png" alt="image-20230403130742595" style="zoom:65%;" />
 
 合法时间戳生成的消息可以通过时间戳认证，单片机能够正常解析消息。
 
-<img src="README.assets/image-20230403130808630.png" alt="image-20230403130808630" style="zoom:67%;" />
+<img src="README.assets/image-20230403130808630.png" alt="image-20230403130808630" style="zoom:55%;" />
 
 即使签名认证通过，时间戳认证不通过，认证也不通过，此时单片机不解析消息，避免计算资源的浪费，有效抵抗重放攻击。
